@@ -4,3 +4,18 @@ $light-colour: cyan;
 $danger-colour: orange;
 $success-colour: green;
 $max-width: 1150px;
+
+//set text colour based on bakgorund
+@function set-text-colour($colour){
+    @if(lightness($colour) > 50 ){
+        @return #333;
+    }@else {
+        @return #fff;
+    }
+}
+
+//set backgeround and text colour
+@mixin set-background($colour) {
+    background-color: $colour;
+    color: set-text-colour($colour);
+}
