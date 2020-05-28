@@ -71,3 +71,13 @@ img {
         justify-content: center;
     }
 }
+
+//profiles page
+.profile {
+    display: grid;//below to split the grid into 2-4-2 horizontal ratio
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-gap: 2rem;
+    align-items: center;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
